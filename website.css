@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+  background-color:#080617;
+  color:#94A9F0;
+  line-height: 2;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+a {
+	color:#616DD7;
+}
+
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Navigation */
+header {
+  background-color:#2D29A0;
+  padding: 10px 0;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 30px;
+  padding: 0px;
+  gap: 20px;
+}
+
+header nav li {
+  margin: 0 10px;
+  padding-right: 30px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+header nav a:hover {
+  color: lightgray;
+}
+header nav img {
+  height: 100px;
+  padding-left: 60px;
+}
