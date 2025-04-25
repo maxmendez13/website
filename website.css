@@ -17,6 +17,7 @@ body {
 }
 
 h1 {
+	margin-top: 60px;
 	text-align: center;
 	font-size: 50px;
 }
@@ -29,6 +30,9 @@ a {
 	color:#616DD7;
 }
 
+li {
+	font-size: 18px;
+}
 
 .wrapper {
   max-width: 1000px;
@@ -39,7 +43,7 @@ a {
 /* Header Navigation */
 header {
   background-color:#2D29A0;
-  padding: 10px 0;
+  padding: 5px 0;
   width: 100%;
 }
 
@@ -47,7 +51,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 header nav ul {
@@ -74,6 +78,6 @@ header nav a:hover {
   color: lightgray;
 }
 header nav img {
-  height: 100px;
-  padding-left: 60px;
+  height: 130px;
+  padding-left: 30px;
 }
