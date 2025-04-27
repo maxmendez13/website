@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+
+
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+	
+	 <!-- Make sure you put this AFTER Leaflet's CSS -->
+ 	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+	<link rel="stylesheet" href="website.css" type="text/css">
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+	
+</head>
+
+	 <!-- Site Header -->
+    <header>
+      <nav>
+        <a href="index.html"><img src="imgs/websitelogo.gif" alt="Website Logo" />
+        </a>
+        <ul>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="extras.html">Extras</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+	
+<body>
+	<h1>Map</h1>
+	<div class="wrapper">
+	<p>Please look at this map that took so long to implement</p>
+	
+	<div id="map"></div>
+	<script>
+		 var map = L.map('map').setView([40.495949, -74.444122], 13);
+		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+		
+		var marker = L.marker([40.495949, -74.444122]).addTo(map);
+		var popup = L.popup();
+		marker.bindPopup("<b>This is Rutgers New Brunswick");
+		function onMapClick(e) {
+			marker.openPopup();
+		}
+		
+	</script>
+	<p>College Ave | Cook/Doug | Busch | Livingston</p>
+	</div>
+	</body>
+</html>

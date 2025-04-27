@@ -71,7 +71,7 @@ header nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 20px;
 }
 
 header nav a:hover {
@@ -80,4 +80,61 @@ header nav a:hover {
 header nav img {
   height: 130px;
   padding-left: 30px;
+}
+
+.scroll {
+	background-color: #171444;
+	width: 90%;
+	height: 400px;
+	overflow: auto;
+}
+
+#map {
+	width: 900px;
+	height: 500px;
+	border: solid #bababa 1px;
+}
+
+#map-legend{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-radius: 3px;
+	padding: 5px 10px;
+	box-shadow: 0 0 0 2px rgb(0 0 0 / 20%);
+	background: #FFFFFF;
+	width: 120px;
+	height: 100px;
+}
+
+#map-legend p{
+	font-family: "roca", serif;
+	font-size: 1rem;
+	font-weight: 100;
+}
+#map-legend p, i{
+	display: inline;
+	line-height: 2.0;
+}
+#map-legend i{
+	font-size:20px;
+	color: #7A4C4C;
+/*	display: inline;*/
+}
+
+#map-legend h4{
+	font-family: "roca", serif;
+	color: #7A4C4C;
+	font-size: 1.5rem;
+/*	line-height: 0.1;*/
+	text-align: center;
+	margin: 0.2px 0px 0px 0px;
+}
+
+#map-legend hr{
+	height: 1px;
+	margin:0.2px 0px 0.7px 0px;
 }
