@@ -1,21 +1,21 @@
 @charset "utf-8";
 /* CSS Document */
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 @font-face {
     font-family: 'DEC Terminal Modern';
-	src: url('DECTerminalModern.eot');
-    src: url('_decterm.ttf') format('truetype'),
-		url('../fonts/_decterm.woff') format('woff'),
-		url('../fonts/_decterm.woff2') format('woff2'),
-		url('../fonts/DECTerminalModern.eot') format('embedded-opentype'),
+    src: url('../fonts/DECTerminalModern.eot');
+    src: url('../fonts/_decterm.ttf') format('truetype'),
+	url('../fonts/_decterm.woff') format('woff'),
+	url('../fonts/_decterm.woff2') format('woff2'),
+	url('../fonts/DECTerminalModern.eot') format('embedded-opentype'),
         url('../fonts/DECTerminalModern.svg') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
