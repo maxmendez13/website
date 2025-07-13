@@ -3,12 +3,12 @@
 
 @font-face {
     font-family: 'DEC Terminal Modern';
-    src: url('../fonts/DECTerminalModern.eot');
-    src: url('../fonts/_decterm.ttf') format('truetype'),
-	url('../fonts/_decterm.woff') format('woff'),
-	url('../fonts/_decterm.woff2') format('woff2'),
-	url('../fonts/DECTerminalModern.eot') format('embedded-opentype'),
-        url('../fonts/DECTerminalModern.svg') format('svg');
+	src: url('DECTerminalModern.eot');
+    src: url('fonts/_decterm.ttf') format('truetype'),
+		url('fonts/_decterm.woff') format('woff'),
+		url('fonts/_decterm.woff2') format('woff2'),
+		url('fonts/DECTerminalModern.eot') format('embedded-opentype'),
+        url('fonts/DECTerminalModern.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -102,8 +102,19 @@ p {
 }
 
 .img-of-self {
-	width: 25vw;
-	height: 45vh;
+	width: 24vw;
+	height: 48vh;
+}
+
+.grid-experience {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.grid-experience-item {
+	display: flex;
+	justify-content: left;
+	align-items: center;
 }
 
 .flex-container {
@@ -169,52 +180,22 @@ header nav img {
 	overflow: auto;
 }
 
-#map {
-	width: 900px;
-	height: 500px;
-	border: solid #bababa 1px;
+.fade-in-text {
+  opacity: 0;
+  transform: translateY(20vh);
+  transition: opacity 1200ms ease-out, transform 600ms ease-out;
+  will-change: opacity, transform, visibility;
 }
 
-#map-legend{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: 1000;
-	margin-bottom: 10px;
-	margin-left: 10px;
-	border-radius: 3px;
-	padding: 5px 10px;
-	box-shadow: 0 0 0 2px rgb(0 0 0 / 20%);
-	background: #FFFFFF;
-	width: 120px;
-	height: 100px;
+@media (prefers-reduced-motion) {
+    .fade-in-text {
+        transition: none !important;
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
 }
 
-#map-legend p{
-	font-family: "roca", serif;
-	font-size: 1rem;
-	font-weight: 100;
-}
-#map-legend p, i{
-	display: inline;
-	line-height: 2.0;
-}
-#map-legend i{
-	font-size:20px;
-	color: #7A4C4C;
-/*	display: inline;*/
-}
-
-#map-legend h4{
-	font-family: "roca", serif;
-	color: #7A4C4C;
-	font-size: 1.5rem;
-/*	line-height: 0.1;*/
-	text-align: center;
-	margin: 0.2px 0px 0px 0px;
-}
-
-#map-legend hr{
-	height: 1px;
-	margin:0.2px 0px 0.7px 0px;
+.fade-in-text.visible {
+  opacity: 1;
+  transform: none;
 }
