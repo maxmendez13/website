@@ -103,7 +103,8 @@ p {
 
 .img-of-self {
 	width: 24vw;
-	height: 48vh;
+	height: auto;
+	max-width: 100%;
 }
 
 .grid-experience {
@@ -123,6 +124,7 @@ p {
 	align-content: center;
 	max-width: 80%;
 	margin: auto;
+	flex-wrap: wrap;
 }
 
 .gap {
